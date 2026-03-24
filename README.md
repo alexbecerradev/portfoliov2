@@ -1,36 +1,106 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧑‍💻 Personal Portfolio — Next.js
 
-## Getting Started
+A modern personal portfolio built with **Next.js**, **Framer Motion**, and **Tailwind CSS**. Features animated sections, a custom color palette with neon accents, and a glassmorphism card style.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Tech Stack
+
+| Layer | Tech |
+|-------|------|
+| Framework | Next.js (App Router) |
+| Styling | Tailwind CSS v4 |
+| Animations | Framer Motion |
+| Language | TypeScript |
+
+---
+
+## 📁 Project Structure
+
+```
+├── app/
+│   └── page.tsx               # Main entry point
+├── components/
+│   └── About.tsx              # About section component
+├── public/
+│   └── assets/
+│       └── profile.png        # Profile image
+├── tailwind.config.ts
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🎨 Design System
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Custom Tailwind tokens used throughout the project:
 
-## Learn More
+| Token | Usage |
+|-------|-------|
+| `neonOrange` | Accent color, highlights |
+| `softGray` | Body text |
+| `glass-card` | Glassmorphism card style |
+| `neon-border` | Glowing border effect |
+| `section-container` | Section layout wrapper |
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ⚙️ Getting Started
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Prerequisites
 
-## Deploy on Vercel
+- Node.js 18+
+- npm / yarn / pnpm
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Install & Run
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### Build for Production
+
+```bash
+npm run build
+npm start
+```
+
+---
+
+## 🖼️ About Section
+
+The `About` component (`components/About.tsx`) features:
+
+- Scroll-triggered entrance animations via `framer-motion` (`whileInView`)
+- A profile image with a radial vignette overlay
+- A hover glow effect on the image card
+- Responsive two-column layout (stacks on mobile)
+
+---
+
+## 📦 Key Dependencies
+
+```bash
+npm install framer-motion
+```
+
+Tailwind CSS and Next.js are configured out of the box.
+
+---
+
+## 📝 Notes
+
+- Profile image path: `public/assets/profile.png`
+- On Windows, use forward slashes in `src` props: `assets/profile.png` (not `assets\profile.png`) to avoid broken paths in the browser.
+
+---
+
+## 📄 License
+
+MIT
