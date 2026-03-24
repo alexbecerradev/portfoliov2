@@ -22,7 +22,7 @@ export default function Contact() {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-16">
             <motion.a
-              href="mailto:contact@alexbecerra.dev"
+              href="mailto:alexbecerradev@gmail.com"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="btn-primary flex items-center gap-2"
