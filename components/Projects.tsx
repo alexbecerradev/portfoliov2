@@ -12,17 +12,18 @@ const projects = [
     github: 'https://github.com/alexbecerradev/nous-n8nchat/tree/main',
   },
   {
-    title: 'React Native App (Coming Soon)',
+    title: 'React Native App AcopiAPP',
     description: 'A cutting-edge mobile application currently under development using React Native and Expo.',
     tags: ['React Native', 'Mobile', 'UI/UX'],
-    link: '#',
-    github: null,
+    link: 'https://acopiapp.netlify.app/',
+    github: 'https://github.com/alexbecerradev/acopiapp',
+
   },
   {
     title: 'RVM Landing Page',
     description: 'Modern and fast landing page built with React, focusing on performance and clean aesthetics.',
     tags: ['React', 'UI/UX', 'Performance'],
-    link: 'https://github.com/alexbecerradev/rvmlanding',
+    link: 'https://rvmlanding.vercel.app/',
     github: 'https://github.com/alexbecerradev/rvmlanding',
   },
 ]
