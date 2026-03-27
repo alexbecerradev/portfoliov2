@@ -1,15 +1,16 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { ArrowRight, Github } from 'lucide-react'
+import { ArrowRight, Github, Phone } from 'lucide-react'
 
 export default function Hero() {
   return (
     <section className="h-screen flex flex-col justify-center items-center relative overflow-hidden px-6">
       {/* Animated Background Elements */}
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-neonOrange/5 rounded-full blur-[120px] animate-pulse" />
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/5 rounded-full blur-[120px] animate-pulse delay-1000" />
-      
+      <div className="absolute top-1/4 left-1/4 w-[100px] h-[100px] bg-neonOrange/20 rounded-full blur-[120px] animate-pulse" />
+      <div className="absolute bottom-1/4 right-1/4 w-[100px] h-[100px] bg-blue-500/20 rounded-full blur-[120px] animate-pulse delay-1000" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-neonOrange/20 rounded-full blur-[160px]" />
+
       <div className="z-10 text-center max-w-4xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -27,7 +28,7 @@ export default function Hero() {
             Child of the 90s decade, I grew up surrounded by technology and computers.
             Since then I've been passionate about building software, experimenting with new tools, and exploring how technology can solve real-world problems.
           </p>
-          
+
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
             <motion.a
               href="#projects"
@@ -45,7 +46,7 @@ export default function Hero() {
               className="btn-secondary flex items-center gap-2"
             >
               Contact
-              <Github className="w-4 h-4" />
+              <Phone className="w-4 h-4" />
             </motion.a>
           </div>
         </motion.div>
